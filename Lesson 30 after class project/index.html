@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Validate in JavaScript</title>
+    <style>
+        h2{
+            background-color: antiquewhite;
+            border-top: 10px double olivedrab;
+            border-bottom: 10px double olivedrab;
+            border-left: 10px double cadetblue;
+            border-right: 10px double darkturquoise;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 40px;
+        }
+        input[type="text"]{
+            border: 3px solid lightcoral;
+        }
+        input[type="number"]{
+            border: 3px solid lightcoral;
+        }
+        body{
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Validate Inputs</h2>
+    <div class="container" id="form1">
+
+        <form name="myForm" onsubmit="ValidateForm()">
+            <fieldset><LEGEND style="text-align: center; font-size: 50px; color: darkblue;">LOGIN FORM</LEGEND>
+
+            <label style="font-size: 30px;">Name: </label><input type="text" placeholder="name" name="fname" style="font-size: 20px;"><br>
+
+            <label style="font-size: 30px;">Age: </label><input id="id1" type="number" placeholder="age" style="font-size: 20px;" min="18" required>
+
+            <input type="submit" value="login">
+
+            <p id="message"></p>
+            <script src="script.js">
+            </script>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>
